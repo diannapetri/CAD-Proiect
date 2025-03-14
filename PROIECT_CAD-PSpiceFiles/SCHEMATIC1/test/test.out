@@ -1,0 +1,191 @@
+
+**** 05/27/24 14:23:23 ***** PSpice 23.1.0 (17 April 2024) **** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-test"  [ c:\users\diana\onedrive\desktop\cdssetup\workspace\projects\proiect_cad\PROIECT_CAD-PSpiceFiles\SCH
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "test.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\Users\diana\OneDrive\Desktop\cdssetup\OrCAD_PSpice\23.1.0\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.DC LIN PARAM r 15k 670k 1k 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source PROIECT_CAD
+Q_Q1         N00622 N00170 VCC Q2N1132
+Q_Q2         N00170 N00170 VCC Q2N1132
+R_R1         0 N00170  787k TC=0,0 
+R_Rsenzor         0 N00622  {r} TC=0,0 
+V_V1         VCC 0 11
+V_V2         -VCC 0 -11
+X_U1A         N00622 N00747 VCC -VCC N00747 TL082
+R_R6         N00747 N00968  3.4k TC=0,0 
+R_R7         N00968 0  2.8k TC=0,0 
+R_R4         N01064 N00997  3.4k TC=0,0 
+X_U1B         N00968 N00997 VCC -VCC N01047 TL082
+R_R5         N00997 N01047  2.8k TC=0,0 
+X_U2A         N01139 N01064 VCC -VCC N01064 TL082
+R_R2         N01139 -VCC  6.65k TC=0,0 
+R_R3         0 N01139  1.65k TC=0,0 
+X_U2B         N01612 N01047 VCC -VCC N01629 TL082
+R_R10         N01646 N01612  1k TC=0,0 
+R_R11         N01612 N01629  14k TC=0,0 
+X_U3A         N01762 N01646 VCC -VCC N01646 TL082
+R_R8         N01762 VCC  4.99k TC=0,0 
+R_R9         0 N01762  1k TC=0,0 
+.PARAM  r=15k
+
+**** RESUMING test.cir ****
+.END
+
+**** 05/27/24 14:23:23 ***** PSpice 23.1.0 (17 April 2024) **** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-test"  [ c:\users\diana\onedrive\desktop\cdssetup\workspace\projects\proiect_cad\PROIECT_CAD-PSpiceFiles\SCH
+
+
+ ****     Diode MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_U1A.dx        X_U1A.dy        X_U1B.dx        X_U1B.dy        
+          IS  800.000000E-18  800.000000E-18  800.000000E-18  800.000000E-18 
+          RS                    1.000000E-03                    1.000000E-03 
+         CJO                   10.000000E-12                   10.000000E-12 
+
+
+               X_U2A.dx        X_U2A.dy        X_U2B.dx        X_U2B.dy        
+          IS  800.000000E-18  800.000000E-18  800.000000E-18  800.000000E-18 
+          RS                    1.000000E-03                    1.000000E-03 
+         CJO                   10.000000E-12                   10.000000E-12 
+
+
+               X_U3A.dx        X_U3A.dy        
+          IS  800.000000E-18  800.000000E-18 
+          RS                    1.000000E-03 
+         CJO                   10.000000E-12 
+
+
+**** 05/27/24 14:23:23 ***** PSpice 23.1.0 (17 April 2024) **** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-test"  [ c:\users\diana\onedrive\desktop\cdssetup\workspace\projects\proiect_cad\PROIECT_CAD-PSpiceFiles\SCH
+
+
+ ****     BJT MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               Q2N1132         
+               PNP             
+       LEVEL    1            
+          IS  650.600000E-18 
+          BF   70.35         
+          NF    1            
+         VAF  115.7          
+         IKF    1.079        
+         ISE  180.500000E-15 
+          NE    1.829        
+          BR    4.146        
+          NR    1            
+         ISS    0            
+          RB   10            
+          RE    0            
+          RC     .715        
+         CJE   19.820000E-12 
+         VJE     .75         
+         MJE     .3357       
+         CJC   29.520000E-12 
+         VJC     .75         
+         MJC     .5383       
+        XCJC    1            
+         CJS    0            
+         VJS     .75         
+          TF  757.700000E-12 
+         XTF    1.7          
+         VTF    5            
+         ITF     .65         
+          TR  119.900000E-09 
+         XTB    1.5          
+          KF    0            
+          AF    1            
+          CN    2.2          
+           D     .52         
+
+
+**** 05/27/24 14:23:23 ***** PSpice 23.1.0 (17 April 2024) **** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-test"  [ c:\users\diana\onedrive\desktop\cdssetup\workspace\projects\proiect_cad\PROIECT_CAD-PSpiceFiles\SCH
+
+
+ ****     Junction FET MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_U1A.jx1       X_U1A.jx2       X_U1B.jx1       X_U1B.jx2       
+               NJF             NJF             NJF             NJF             
+         VTO   -1              -1              -1              -1            
+        BETA  222.070000E-06  222.070000E-06  222.070000E-06  222.070000E-06 
+          IS  100.000000E-12  100.000000E-12  100.000000E-12  100.000000E-12 
+
+
+               X_U2A.jx1       X_U2A.jx2       X_U2B.jx1       X_U2B.jx2       
+               NJF             NJF             NJF             NJF             
+         VTO   -1              -1              -1              -1            
+        BETA  222.070000E-06  222.070000E-06  222.070000E-06  222.070000E-06 
+          IS  100.000000E-12  100.000000E-12  100.000000E-12  100.000000E-12 
+
+
+               X_U3A.jx1       X_U3A.jx2       
+               NJF             NJF             
+         VTO   -1              -1            
+        BETA  222.070000E-06  222.070000E-06 
+          IS  100.000000E-12  100.000000E-12 
+
+
+
+          JOB CONCLUDED
+
+**** 05/27/24 14:23:23 ***** PSpice 23.1.0 (17 April 2024) **** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-test"  [ c:\users\diana\onedrive\desktop\cdssetup\workspace\projects\proiect_cad\PROIECT_CAD-PSpiceFiles\SCH
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  Total job time (using Solver 1)   =         .27
+
